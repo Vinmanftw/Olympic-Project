@@ -1,3 +1,33 @@
 body {
   background: white;
 }
+.streamTabs {
+  float: left;
+  padding: 10px;
+}
+.streamTabs button{ 
+ width: 400px;
+ margin-bottom: 20px;
+}
+#Netflix {
+  background-color: red;
+}
+#Prime {
+  background-color: blue;
+}
+#Hulu {
+  background-color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
