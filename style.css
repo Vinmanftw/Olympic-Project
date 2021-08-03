@@ -1,6 +1,6 @@
 body {
-  background: #050505;
-  color: white;
+  background: #f7f5f5;
+  color: rgb(17, 16, 16);
 }
 * {
   box-sizing: border-box;
@@ -19,23 +19,30 @@ body {
   background-color: rgb(238, 18, 18);
 }
 
-#prime {
-  background-color: rgb(10, 95, 252);
-  color: white;
-}
-
-#hulu {
-  background-color: rgb(10, 231, 128);
-}
-
 h2 {
-  color: white;
+  color: rgb(24, 23, 23);
 }
-.streamTabs {
-  float: left;
-  padding: 10px;
-}
+
 .streamTabs button {
   width: 400px;
   margin-bottom: 20px;
+}
+
+#search-form {
+  margin: auto;
+  text-align: center;
+}
+
+#search-input {
+  margin: auto;
+  text-align: left;
+}
+
+#back {
+  margin-top: 90px;
+}
+
+#movie-container {
+  margin: auto;
+  text-align: center;
 }

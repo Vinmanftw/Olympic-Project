@@ -6,9 +6,10 @@ const streamingProviders = [`netflix`];
 
 document.addEventListener("DOMContentLoaded", (e) => {
   //e.preventDefault()
-  navigation();
+
   fetchAndRender({
     provider: "netflix",
     page: curIndex,
   });
+  navigation();
 });
