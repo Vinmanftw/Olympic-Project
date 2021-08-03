@@ -5,23 +5,18 @@ const GET = {
     "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
   },
 };
+
 //creates a url that thats parameters changes what streaming service and type the data is for
-function url(streamingService, type) {
+function url(streamingService, type, pg) {
   return `https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=${streamingService}&type=${type}&genre=18&page=${pg}&language=en`;
 }
 //fetches all data from a certain(SINGLE) streaming provider (Takes a string ` ` ) HTTP tag parameter can be added here in the future
-function fetchByProvider(streamingService) {
-  fetch(url(streamingService, `movie`), GET)
-    .then((response) => {
-      return response.json();
-    })
-    .then(console.log);
-  // fetch(url(streamingService, `series`), GET)
-  //   .then((response) => {
-  //     return response.json();
-  //   })
-  //   .then(console.log);
+function fetchByProvider(streamingService, pg) {
+  return fetch(url(streamingService, `movie`, pg), GET).then((response) => {
+    return response.json();
+  });
 }
+
 //creates a for loop that runs a parsed function for each element in the Array
 function forLoop(array, fun) {
   for (let i = 0; i < array.length; i++) {
@@ -34,20 +29,33 @@ function forLoop2(array, fun, secondPara) {
     fun(array[i], secondPara);
   }
 }
-// creates button in requested location gives an id = to name 'div .streamTabs'
-function createButtons(stringName, location) {
-  const div = document.createElement(`div`);
-  const bttn = document.createElement("button");
-  bttn.id = `${stringName}`;
-  bttn.textContent = `${stringName}`;
-  div.appendChild(bttn);
-  document.querySelector(`${location}`).appendChild(div);
-}
+let curIndex = 1;
+
 // creates an eventlistener at a given location
-function eventlistener(type, location) {}
+function navigation() {
+  document.querySelector("#next").addEventListener("click", () => {
+    curIndex++;
+    console.log(fetchByProvider(`netflix`, `${curIndex}`));
+    console.log("righht");
+  });
+
+  document.querySelector("#back").addEventListener("click", () => {
+    if (curIndex > 1) {
+      curIndex--;
+      console.log(fetchByProvider(`netflix`, `${curIndex}`));
+      console.log("left");
+    }
+  });
+}
+
 //list of the current streaming providers
-const streamingProviders = [`netflix`, `prime`, `hulu`];
+const streamingProviders = [`netflix`];
 //returns ALL off the data from the current streaming providers
 //forLoop(streamingProviders, fetchByProvider);
 // create buttons for all streaming providers on homepage
-forLoop2(streamingProviders, createButtons, `.streamTabs`);
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  //e.preventDefault()
+  navigation();
+  fetchByProvider(`netflix`, `${curIndex}`);
+});
