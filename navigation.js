@@ -6,6 +6,10 @@ function navigation() {
     curIndex++;
     console.log(fetchByProvider(`netflix`, `${curIndex}`));
     console.log("righht");
+    fetchAndRender({
+      provider: "netflix",
+      page: curIndex,
+    });
   });
 
   document.querySelector("#back").addEventListener("click", () => {
