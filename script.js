@@ -7,5 +7,8 @@ const streamingProviders = [`netflix`];
 document.addEventListener("DOMContentLoaded", (e) => {
   //e.preventDefault()
   navigation();
-  fetchByProvider(`netflix`, `${curIndex}`);
+  fetchByProvider(`netflix`, `${curIndex}`).then((res) => {
+    console.log(res.results);
+    res.results.forEach(renderMovie);
+  });
 });
