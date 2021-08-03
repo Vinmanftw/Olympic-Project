@@ -1,3 +1,32 @@
 body {
-  background: rgb(164, 229, 231);
+  background: #050505;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.streamTabs button {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+#Netflix {
+  background-color: rgb(238, 18, 18);
+}
+
+#Prime {
+  background-color: rgb(10, 95, 252);
+  color: white;
+}
+
+#Hulu {
+  background-color: rgb(10, 231, 128);
+}
+
+h2 {
+  color: white;
 }

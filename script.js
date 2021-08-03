@@ -1,9 +1,7 @@
-//After Practicing Dry
-//sets the http GET object
 const GET = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "956f6f9355mshb2c039180194fb0p15f298jsnfaa5a99353d3",
+    "x-rapidapi-key": "571e5b6272mshe8e7cde5770f143p15455cjsne5fac391a610",
     "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
   },
 };
@@ -30,7 +28,26 @@ function forLoop(array, fun) {
     fun(array[i]);
   }
 }
+//allow you to run a for loop that parses a function with 2 parameters
+function forLoop2(array, fun, secondPara) {
+  for (let i = 0; i < array.length; i++) {
+    fun(array[i], secondPara);
+  }
+}
+// creates button in requested location gives an id = to name 'div .streamTabs'
+function createButtons(stringName, location) {
+  const div = document.createElement(`div`);
+  const bttn = document.createElement("button");
+  bttn.id = `${stringName}`;
+  bttn.textContent = `${stringName}`;
+  div.appendChild(bttn);
+  document.querySelector(`${location}`).appendChild(div);
+}
+// creates an eventlistener at a given location
+function eventlistener(type, location) {}
 //list of the current streaming providers
-const streamingProviders = [`netflix`, `prime`, `hulu`];
+const streamingProviders = [`Netflix`, `Prime`, `Hulu`];
 //returns ALL off the data from the current streaming providers
 forLoop(streamingProviders, fetchByProvider);
+// create buttons for all streaming providers on homepage
+forLoop2(streamingProviders, createButtons, `.streamTabs`);
