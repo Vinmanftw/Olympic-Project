@@ -48,10 +48,6 @@ function eventlistener(type, location) {}
 //list of the current streaming providers
 const streamingProviders = [`Netflix`, `Prime`, `Hulu`];
 //returns ALL off the data from the current streaming providers
-<<<<<<< HEAD
 forLoop(streamingProviders, fetchByProvider);
 // create buttons for all streaming providers on homepage
 forLoop2(streamingProviders, createButtons, `.streamTabs`);
-=======
-forLoop(streamingProviders, fetchByProvider);
->>>>>>> 23190a838a652a14efa3506a66d1db00feee9917
