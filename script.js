@@ -1,7 +1,7 @@
 const GET = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "571e5b6272mshe8e7cde5770f143p15455cjsne5fac391a610",
+    "x-rapidapi-key": "956f6f9355mshb2c039180194fb0p15f298jsnfaa5a99353d3",
     "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
   },
 };
@@ -16,11 +16,11 @@ function fetchByProvider(streamingService) {
       return response.json();
     })
     .then(console.log);
-  fetch(url(streamingService, `series`), GET)
-    .then((response) => {
-      return response.json();
-    })
-    .then(console.log);
+  // fetch(url(streamingService, `series`), GET)
+  //   .then((response) => {
+  //     return response.json();
+  //   })
+  //   .then(console.log);
 }
 //creates a for loop that runs a parsed function for each element in the Array
 function forLoop(array, fun) {
@@ -46,8 +46,8 @@ function createButtons(stringName, location) {
 // creates an eventlistener at a given location
 function eventlistener(type, location) {}
 //list of the current streaming providers
-const streamingProviders = [`Netflix`, `Prime`, `Hulu`];
+const streamingProviders = [`netflix`, `prime`, `hulu`];
 //returns ALL off the data from the current streaming providers
-forLoop(streamingProviders, fetchByProvider);
+//forLoop(streamingProviders, fetchByProvider);
 // create buttons for all streaming providers on homepage
 forLoop2(streamingProviders, createButtons, `.streamTabs`);
