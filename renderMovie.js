@@ -15,7 +15,13 @@ function renderMovie(movie) {
   img.src = movie.posterURLs["500"];
   img.className = "movie-poster";
 
+  const url = `https://www.imdb.com/title/${movie.imdbID}/`;
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.append(img);
+
   flicks.append(h4);
-  flicks.append(img);
+  flicks.append(link);
   movieContainer.append(flicks);
 }
