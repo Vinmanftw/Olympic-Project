@@ -22,4 +22,10 @@ function navigation() {
       });
     }
   });
+
+  document.querySelector("#search-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const value = document.querySelector("#search-input").value;
+    console.log(value);
+  });
 }

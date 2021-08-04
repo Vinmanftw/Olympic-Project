@@ -1,5 +1,5 @@
 body {
-  background: #222121;
+  background: #131212;
   color: rgb(163, 163, 163);
 }
 * {
@@ -19,7 +19,7 @@ body {
   background-color: rgb(238, 18, 18);
 }
 
-h2 {
+h4 {
   color: rgb(226, 224, 224);
 }
 
@@ -52,7 +52,7 @@ h2 {
   border: rgb(228, 7, 7) solid 2px;
   padding: 1rem;
   width: 15rem;
-  height: 25rem;
+  height: 28rem;
   display: inline-grid;
   margin: 1rem 2rem;
 }
