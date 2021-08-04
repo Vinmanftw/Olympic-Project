@@ -27,5 +27,11 @@ function navigation() {
     e.preventDefault();
     const value = document.querySelector("#search-input").value;
     console.log(value);
+    curIndex = 1;
+    fetchAndRender({
+      provider: "netflix",
+      page: curIndex,
+      keyword: value,
+    });
   });
 }
