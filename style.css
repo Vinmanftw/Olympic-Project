@@ -66,22 +66,27 @@ h4 {
   display: block;
   width: 25%;
   border: none;
-  background-color: #656566;
-  padding: 14px 28px;
+  background-color: #eeeef7;
+  padding-bottom: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
   border-bottom: black;
+  border-radius: 25px;
+  float: right;
+  margin-top: 90px;
 }
 
 #back {
   display: block;
   width: 25%;
   border: none;
-  background-color: #656566;
-  padding: 14px 28px;
+  background-color: #eeeef7;
+  padding-bottom: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
   border-top: black;
+  border-radius: 25px;
+  float: left;
 }
