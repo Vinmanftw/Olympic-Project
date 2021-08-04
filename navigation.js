@@ -5,7 +5,7 @@ function navigation() {
   document.querySelector("#next").addEventListener("click", () => {
     curIndex++;
 
-    console.log("righht");
+    console.log("right");
     fetchAndRender({
       provider: "netflix",
       page: curIndex,
@@ -15,8 +15,11 @@ function navigation() {
   document.querySelector("#back").addEventListener("click", () => {
     if (curIndex > 1) {
       curIndex--;
-      console.log(fetchByProvider(`netflix`, `${curIndex}`));
       console.log("left");
+      fetchAndRender({
+        provider: "netflix",
+        page: curIndex,
+      });
     }
   });
 }

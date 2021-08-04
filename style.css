@@ -1,6 +1,6 @@
 body {
-  background: #f7f5f5;
-  color: rgb(17, 16, 16);
+  background: #222121;
+  color: rgb(163, 163, 163);
 }
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
 }
 
 h2 {
-  color: rgb(24, 23, 23);
+  color: rgb(226, 224, 224);
 }
 
 .streamTabs button {
@@ -43,13 +43,28 @@ h2 {
 }
 
 #movie-container {
-  margin: auto;
+  margin: 2rem;
   text-align: center;
+}
+
+.card {
+  text-align: center;
+  border: rgb(228, 7, 7) solid 2px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+}
+
+.movie-poster {
+  justify-self: center;
+  width: 100%;
 }
 
 #next {
   display: block;
-  width: 50%;
+  width: 25%;
   border: none;
   background-color: #656566;
   padding: 14px 28px;
@@ -61,7 +76,7 @@ h2 {
 
 #back {
   display: block;
-  width: 50%;
+  width: 25%;
   border: none;
   background-color: #656566;
   padding: 14px 28px;
