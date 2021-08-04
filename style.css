@@ -46,3 +46,27 @@ h2 {
   margin: auto;
   text-align: center;
 }
+
+#next {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #656566;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: black;
+}
+
+#back {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #656566;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-top: black;
+}

@@ -5,5 +5,17 @@ function renderMovie(movie) {
   const movieDiv = document.createElement("div");
   movieDiv.innerText = movie.title;
 
-  movieContainer.append(movieDiv);
+  const flicks = document.createElement("div");
+  flicks.className = "card";
+
+  const h2 = document.createElement("h2");
+  h2.innerText = movie.title;
+
+  const img = document.createElement("img");
+  img.src = movie.posterURLs["500"];
+  img.className = "movie-poster";
+
+  flicks.append(h2);
+  flicks.append(img);
+  movieContainer.append(flicks);
 }
