@@ -1,13 +1,10 @@
 body {
   background: #131212;
   color: rgb(163, 163, 163);
+  font-family: Arial;
 }
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
 }
 
 .streamTabs button {
@@ -20,7 +17,7 @@ body {
 }
 
 h4 {
-  color: rgb(226, 224, 224);
+  color: #f7f3f3;
 }
 
 .streamTabs button {
