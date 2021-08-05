@@ -16,8 +16,8 @@ body {
   background-color: rgb(238, 18, 18);
 }
 
-h4 {
-  color: #f7f3f3;
+#welcome {
+  color: #e50914;
 }
 
 .streamTabs button {
