@@ -5,7 +5,7 @@ const streamingProviders = [`netflix`];
 // create buttons for all streaming providers on homepage
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  //e.preventDefault()
+  //e.preventDefault();
 
   fetchAndRender({
     provider: "netflix",
