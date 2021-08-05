@@ -16,6 +16,17 @@ body {
   background-color: rgb(238, 18, 18);
 }
 
+#home {
+  position: relative;
+  top: 20px;
+}
+
+#random {
+  position: relative;
+  top: -21px;
+  margin-left: 795px;
+}
+
 #welcome {
   color: #e50914;
 }

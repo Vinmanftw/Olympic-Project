@@ -34,4 +34,20 @@ function navigation() {
       keyword: value,
     });
   });
+
+  document.querySelector("#home").addEventListener("click", () => {
+    (curIndex = 1),
+      fetchAndRender({
+        provider: "netflix",
+        page: curIndex,
+      });
+  });
+
+  document.querySelector("#random").addEventListener("click", () => {
+    let shuffle = Math.floor(Math.random() * 84 + 1);
+    fetchAndRender({
+      provider: "netflix",
+      page: shuffle,
+    });
+  });
 }
