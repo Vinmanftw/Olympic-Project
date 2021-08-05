@@ -4,10 +4,10 @@ function renderMovie(movie) {
   //create new div for movie
   const movieDiv = document.createElement("div");
   movieDiv.innerText = movie.title;
-  //creates a card for a single movie 
+  //creates a card for a single movie
   const flicks = document.createElement("div");
   flicks.className = "card";
-  //creates and sets title for current movie 
+  //creates and sets title for current movie
   const h4 = document.createElement("h4");
   h4.innerText = movie.title;
   //creates and sets Image for current movie
