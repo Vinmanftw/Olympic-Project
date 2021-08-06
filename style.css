@@ -12,19 +12,14 @@ body {
   margin-bottom: 20px;
 }
 
+#buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
 #netflix {
   background-color: rgb(238, 18, 18);
-}
-
-#home {
-  position: relative;
-  top: 20px;
-}
-
-#random {
-  position: relative;
-  top: -21px;
-  margin-left: 795px;
 }
 
 #welcome {
@@ -34,11 +29,6 @@ body {
 .streamTabs button {
   width: 400px;
   margin-bottom: 20px;
-}
-
-#search-form {
-  margin: auto;
-  text-align: center;
 }
 
 #search-input {
