@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  align-items: ;
 }
 
 #netflix {
@@ -68,7 +67,7 @@ body {
   color: #e50914;
   cursor: pointer;
   text-align: center;
-  border-bottom: black;
+
   border-radius: 25px;
   float: right;
 }
@@ -84,7 +83,6 @@ body {
   color: #e50914;
   cursor: pointer;
   text-align: center;
-  border-top: black;
   border-radius: 25px;
   float: left;
 }
