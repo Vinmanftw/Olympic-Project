@@ -26,6 +26,12 @@ body {
   color: #e50914;
 }
 
+#imdb {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
 .streamTabs button {
   width: 400px;
   margin-bottom: 20px;
