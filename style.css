@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  align-items: ;
 }
 
 #netflix {
@@ -34,10 +35,6 @@ body {
 #search-input {
   margin: auto;
   text-align: left;
-}
-
-#back {
-  margin-top: 90px;
 }
 
 #movie-container {
@@ -66,7 +63,7 @@ body {
   border: none;
   background-color: #eeeef7;
   padding-bottom: 14px 28px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: sans-serif;
   color: #e50914;
   cursor: pointer;
@@ -74,7 +71,6 @@ body {
   border-bottom: black;
   border-radius: 25px;
   float: right;
-  margin-top: 90px;
 }
 
 #back {
@@ -83,7 +79,7 @@ body {
   border: none;
   background-color: #eeeef7;
   padding-bottom: 14px 28px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: sans-serif;
   color: #e50914;
   cursor: pointer;
