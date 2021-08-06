@@ -45,9 +45,11 @@ function navigation() {
 
   document.querySelector("#random").addEventListener("click", () => {
     let shuffle = Math.floor(Math.random() * 84 + 1);
-    fetchAndRender({
-      provider: "netflix",
-      page: shuffle,
-    });
+    if(shuffle!= curIndex){
+      fetchAndRender({
+        provider: "netflix",
+        page: shuffle,
+      });
+    }
   });
 }
