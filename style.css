@@ -1,33 +1,96 @@
 body {
-  background: rgb(164, 229, 231);
+  background: #131212;
+  color: rgb(163, 163, 163);
+  font-family: Arial;
 }
-.streamTabs {
+* {
+  box-sizing: border-box;
+}
+
+.streamTabs button {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#netflix {
+  background-color: rgb(238, 18, 18);
+}
+
+#welcome {
+  color: #e50914;
+}
+
+#imdb {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.streamTabs button {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  margin: auto;
+  text-align: left;
+}
+
+#movie-container {
+  margin: 2rem;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  border: rgb(228, 7, 7) solid 2px;
+  padding: 1rem;
+  width: 15rem;
+  height: 28rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+}
+
+.movie-poster {
+  justify-self: center;
+  width: 100%;
+}
+
+#next {
+  display: block;
+  width: 25%;
+  border: none;
+  background-color: #eeeef7;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #e50914;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 50px;
+
+  border-radius: 25px;
+  float: right;
+}
+
+#back {
+  display: block;
+  width: 25%;
+  border: none;
+  background-color: #eeeef7;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #e50914;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
   float: left;
-  padding: 10px;
+  margin-bottom: 50px;
 }
-.streamTabs button{ 
- width: 400px;
- margin-bottom: 20px;
-}
-#Netflix {
-  background-color: red;
-}
-#Prime {
-  background-color: blue;
-}
-#Hulu {
-  background-color: chartreuse;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

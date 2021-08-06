@@ -2,23 +2,36 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css">
-
-    <title>Streaming search</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <div class="streamTabs"></div>
-    <script src="script.js">
-
-    </script> 
-=======
-    <title>Streaming Search</title>
-  </head>
-  <body>
-    <h1>Welcome to Streaming Search</h1>
+    <title>StreamSearch</title>
     
-    <script src="script.js"></script> 
+  </head>
+  <body>
+    <h4 id="welcome">Welcome to StreamSearch</h4>
+    
+    <div id="buttons">
+        <button id="home">Home</button>
+        <form id="search-form">
+        <input id="search-input" placeholder="Search for Movies"/>
+        </form>
+        <button id="random">Random</button>
+    </div>
+    <h5 id="imdb">Click on Movies for IMDB link!</h5>
+   <div class="streamTabs"></div>
+   <div id="movie-container"></div>
+   <div class='nav'>
 
+     <div>
+    <button id="back">Back</button>
+    </div>
+    <div>
+    <button id="next">Next</button>
+    </div>
+   <script src="renderMovie.js"></script>
+  
+   <script src="fetchByProvider.js"></script>
+   <script src="fetchAndRender.js"></script>
+   <script src="navigation.js"></script>
+   <script src="script.js"></script> 
   </body>
-
-</html> 
+</html>
+ 
